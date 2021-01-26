@@ -1,0 +1,12 @@
+.hamburger {
+  width: 25px;
+  height: 3px;
+  margin-bottom: 7px;
+  background-color: hsl(0, 0%, 75%);
+}
+
+@media screen and (min-width: 500px) {
+  .hamburgerParentElem {
+    display: none;
+  }
+}
