@@ -5,8 +5,8 @@ import '../CSS/NavOptions.css';
 // import NavOptions from '../Components/NavOptions'
 import MobileMenu from '../Components/MobileMenu'
 import NavbarLinks from '../Components/NavbarLinks'
+import NavbarRightLinkAndButton from '../Components/NavbarRightLinkAndButton';
 import '../CSS/HamburgerMenu.css';
-import '../CSS/NavbarRightLinkAndButton.css'
 
 
 const Navbar = () => {
@@ -33,14 +33,8 @@ return (
 
 <li>
 
-    <div id="desktopMenuRightLinks">
-        <li className="navbarRightLink">
-             Login
-             </li>
-             <button>
-    Sign Up
-    </button>
-    </div>
+   
+    <NavbarRightLinkAndButton />
 
 </li>
 
