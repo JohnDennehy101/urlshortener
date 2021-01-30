@@ -4,14 +4,14 @@ import '../CSS/NavbarLinks.css';
 
 const NavbarLinks = () => {
 return (
-    <li>
-        <li>
+    <li className="navbarLinksContainer">
+        <li className="navbarLink">
              Features
              </li>
-             <li>
+             <li className="navbarLink">
     Pricing
     </li>
-    <li>
+    <li className="navbarLink">
     Resources
     </li>
 

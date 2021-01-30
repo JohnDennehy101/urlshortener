@@ -1,21 +1,28 @@
 import React from 'react';
 import '../CSS/App.css';
 import '../CSS/NavOptions.css';
-import HamburgerMenu from '../Components/HamburgerMenu'
-import NavbarLinks from '../Components/NavbarLinks';
+
+
 
 const NavOptions = () => {
 return (
 <ul>
 <li>
     <img src="../../images/logo.svg" />
-    <NavbarLinks />
     
 </li>
 
+<li>
+    Features
+</li>
+<li>
+    Pricing
+</li>
+<li>
+    Resources
+</li>
 
-
-    <HamburgerMenu />
+    {/* <HamburgerMenu /> */}
 
 </ul>
 )

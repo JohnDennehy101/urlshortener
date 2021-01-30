@@ -1,8 +1,28 @@
 li {
   display: flex;
   flex-direction: row;
-  margin: 0px 20px;
+
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+  .navbarLink {
+    display: none;
+    margin: 0px;
+  }
+
+  .navbarLinksContainer {
+    display: none;
+  }
+  li {
+    margin: 0px 20px;
+  }
+}
+@media screen and (min-width: 501px) {
+  li {
+    margin: 0px 25px;
+  }
 }
