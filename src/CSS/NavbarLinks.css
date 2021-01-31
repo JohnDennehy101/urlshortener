@@ -18,7 +18,7 @@ li {
     display: none;
   }
   li {
-    margin: 0px 20px;
+    margin: 0px;
   }
 }
 @media screen and (min-width: 501px) {

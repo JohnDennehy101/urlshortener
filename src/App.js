@@ -1,5 +1,6 @@
 import '../src/CSS/App.css';
 import Navbar from '../src/Components/Navbar';
+import Banner from '../src/Components/Banner';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
        
       </header>
       <Navbar />
+      <Banner />
 
     </div>
   );

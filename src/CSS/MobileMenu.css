@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     transition: width 2s ease-in;
+    z-index: 100;
   }
   .mobileMenuLinksContainer {
     flex-direction: column;
