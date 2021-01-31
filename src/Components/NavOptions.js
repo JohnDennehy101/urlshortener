@@ -8,7 +8,7 @@ const NavOptions = () => {
 return (
 <ul>
 <li>
-    <img src="../../images/logo.svg" />
+    <img src={require("../../public/images/logo.svg")} />
     
 </li>
 

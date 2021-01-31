@@ -9,7 +9,7 @@ const DesktopBanner = () => {
 <button id="getStartedButton">Get Started</button>
     </div>
     <div id="bannerImageContainer">
-<img src="../../images/illustration-working.svg" alt="Individual working at laptop" />
+<img src="../images/illustration-working.svg" alt="Individual working at laptop" />
 
 </div>
 </div>

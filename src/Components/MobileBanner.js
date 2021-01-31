@@ -5,7 +5,8 @@ return (
 <div id="bannerParentContainer">
     
     <div id="bannerImageContainer">
-<img src="../../images/illustration-working.svg" alt="Individual working at laptop" />
+<img src="../images/illustration-working.svg" alt="Individual working at laptop" />
+
 
 </div>
 <div id="bannerTextContainer">

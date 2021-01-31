@@ -1,6 +1,7 @@
 import '../src/CSS/App.css';
 import Navbar from '../src/Components/Navbar';
 import Banner from '../src/Components/Banner';
+import InputField from '../src/Components/InputField'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       </header>
       <Navbar />
       <Banner />
+      <InputField />
 
     </div>
   );
