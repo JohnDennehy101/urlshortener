@@ -3,21 +3,52 @@ import Navbar from '../src/Components/Navbar';
 import Banner from '../src/Components/Banner';
 import InputField from '../src/Components/InputField'
 import DisplayLinks from '../src/Components/DisplayLinks'
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useCallback} from 'react';
 import '../src/CSS/InputField.css'
+import axios from 'axios';
 
 function App() {
 
-  const [savedLinks, setSavedLinks] = useState([]);
+  /*const [savedLinks, setSavedLinks] = useState([]);
 
   useEffect(() => {
-    const localStorageLinks = localStorage.getItem('urlLinks')
+    const localStorageLinks = localStorage.getItem('shortenedUrls')
     console.log(localStorageLinks);
 
     if (localStorageLinks !== null) {
       setSavedLinks(JSON.parse(localStorageLinks))
     }
   }, [])
+*/
+  const [shortenedUrls, setShortenedUrl] = useState([]);
+  
+  const [inputValue, setInputValue] = useState('Mallow') 
+
+  const submitButtonClicked = () => {
+    setInputValue(document.getElementById('inputUrl').value)
+    
+  }
+/*
+  useEffect(() => {
+
+const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${inputValue},Ireland&appid=35c57cf166a6ec9dd8bfdcef80de6f0f`;
+    fetch(apiUrl).then(res => res.json()).then((response) => {
+
+      
+      
+      setShortenedUrl((prevs) => {
+        console.log(prevs)
+//localStorage.setItem('shortenedUrls', JSON.stringify([...prevs, response.id]))
+        return [...prevs, response.id]
+      })
+      
+  
+
+  }) }, [inputValue]) */
+
+  
+
+
 
 
 let styleSettings = window.innerWidth > 500 ? {
@@ -33,24 +64,10 @@ let styleSettings = window.innerWidth > 500 ? {
         backgroundColor: 'hsl(257, 27%, 26%)',
         backgroundPosition: 'top right'
     }
-const addUrl = () => {
-
-//localStorage.setItem('urlLinks', JSON.stringify(urls))
-
-console.log('testing')
-
-
-setSavedLinks(prevState => {
-  console.log(prevState)
-  console.log(document.getElementById('inputUrl').value)
-  localStorage.setItem('urlLinks', JSON.stringify([...prevState, document.getElementById('inputUrl').value]))
-  return [...prevState, document.getElementById('inputUrl').value]
-})
-console.log(savedLinks)
 
 
 
-}
+
 
 
   return (
@@ -66,9 +83,13 @@ console.log(savedLinks)
 
       <div id="inputFieldParentContainer" style={styleSettings}>
         <input placeholder='Shorten a link here...' id="inputUrl"/>
-        <button id="shortenUrlButton" onClick={addUrl}>Shorten it!</button>
+        <button id="shortenUrlButton" onClick={submitButtonClicked}>Shorten it!</button>
     </div>
-      <DisplayLinks links={savedLinks} />
+      <DisplayLinks originalLinks={shortenedUrls} />
+
+      
+
+      
 
     </div>
   );
