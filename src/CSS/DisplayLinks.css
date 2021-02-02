@@ -1,0 +1,61 @@
+.linksParentContainer {
+  background-color: hsl(0, 0%, 75%);
+}
+
+@media screen and (min-width: 500px) {
+  .linksContainer {
+    width: 78%;
+    margin: 20px auto;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    background-color: #ffffff;
+  }
+  .shortenedUrl {
+    display: inline-block;
+    margin-right: 5%;
+    color: hsl(180, 66%, 49%);
+  }
+  .originalUrl {
+    display: inline-block;
+    margin-left: 2%;
+  }
+  .shortenedContainer {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .linksContainer {
+    width: 90%;
+    margin: 20px auto;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    background-color: #ffffff;
+  }
+  .shortenedUrl {
+    color: hsl(180, 66%, 49%);
+    text-align: left;
+    margin-left: 10%;
+  }
+  .originalUrl {
+    text-align: left;
+    margin-left: 10%;
+  }
+  .copyButton {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    background-color: hsl(180, 66%, 49%);
+    width: 80%;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+  }
+}

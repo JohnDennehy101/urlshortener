@@ -31,7 +31,7 @@ function App() {
 /*
   useEffect(() => {
 
-const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${inputValue},Ireland&appid=35c57cf166a6ec9dd8bfdcef80de6f0f`;
+const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${inputValue},Ireland&appid=`;
     fetch(apiUrl).then(res => res.json()).then((response) => {
 
       
