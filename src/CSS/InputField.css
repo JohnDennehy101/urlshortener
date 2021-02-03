@@ -8,6 +8,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+    position: relative;
+    z-index: 2;
   }
   input {
     width: 80%;
@@ -46,6 +48,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+    position: relative;
+    z-index: 2;
   }
   input {
     display: inline-block;
