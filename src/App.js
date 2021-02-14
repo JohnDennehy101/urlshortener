@@ -5,6 +5,7 @@ import InputField from '../src/Components/InputField'
 import DisplayLinks from '../src/Components/DisplayLinks'
 import {useState, useEffect, useCallback} from 'react';
 import '../src/CSS/InputField.css'
+import Statistics from '../src/Components/Statistics'
 import axios from 'axios';
 
 function App() {
@@ -86,6 +87,7 @@ let styleSettings = window.innerWidth > 500 ? {
         <button id="shortenUrlButton" onClick={submitButtonClicked}>Shorten it!</button>
     </div>
       <DisplayLinks originalLinks={shortenedUrls} />
+      <Statistics />
 
       
 
