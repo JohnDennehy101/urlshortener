@@ -1,0 +1,12 @@
+.statisticsParentContainer {
+  background-color: #eff1f7;
+  padding-bottom: 3rem;
+}
+.statisticsHeader {
+  margin-top: 0px;
+}
+.statisticsOverviewText {
+  padding-bottom: 4rem;
+  width: 85%;
+  margin: 1rem auto;
+}

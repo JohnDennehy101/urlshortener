@@ -54,7 +54,7 @@
 @media screen and (max-width: 499px) {
   .linksParentContainer {
     padding-top: 25%;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     margin-top: -30%;
     z-index: 1;
   }

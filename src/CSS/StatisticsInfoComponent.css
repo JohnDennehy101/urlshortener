@@ -1,19 +1,31 @@
 .iconImage {
   width: 10%;
   height: 10%;
-  background-color: black;
+  background-color: hsl(257, 27%, 26%);
   padding: 20px;
   border-radius: 50%;
   margin-top: -10%;
+  transform: translateX(-10%);
 }
 .statisticsComponentParentContainer {
-  background-color: #eeeeee;
+  background-color: #ffffff;
   width: 85%;
-  margin: 3rem auto;
-  padding-bottom: 2rem;
+  margin: 1rem auto;
+  margin-bottom: 0px;
+  /*margin-bottom: 6rem;*/
+  height: 15rem;
+  z-index: 1;
 }
 .statisticsComponentDetailText {
   width: 80%;
   text-align: center;
   margin: 10px auto;
+  padding-top: 0.5rem;
+}
+.divider {
+  background-color: hsl(180, 66%, 49%);
+  width: 2%;
+  height: 4rem;
+  text-align: center;
+  margin: 0px auto;
 }
