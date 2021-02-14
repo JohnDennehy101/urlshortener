@@ -12,7 +12,6 @@
   width: 85%;
   margin: 1rem auto;
   margin-bottom: 0px;
-  /*margin-bottom: 6rem;*/
   height: 15rem;
   z-index: 1;
 }
@@ -28,4 +27,83 @@
   height: 4rem;
   text-align: center;
   margin: 0px auto;
+}
+
+@media screen and (min-width: 500px) {
+  .sectionContainer {
+    display: inline-block;
+    width: 26.5%;
+  }
+  .statisticsComponentParentContainer {
+    width: 93%;
+    margin: 0px auto;
+  }
+  .iconImage {
+    transform: translateX(-130%);
+  }
+  .statisticsComponentDetailTitle {
+    text-align: left;
+    margin-left: 2.5rem;
+  }
+  .statisticsComponentDetailText {
+    text-align: left;
+    margin-left: 2.5rem;
+  }
+  .dividerDesktop {
+    background-color: hsl(180, 66%, 49%);
+    width: 7%;
+    height: 0.5rem;
+    position: relative;
+    left: 96.5%;
+    bottom: 7rem;
+
+    /*position: relative;
+    top: -200%;
+    bottom: 20%;
+    left: 90%;*/
+  }
+  .sectionContainer1 {
+    display: inline-block;
+    width: 26.5%;
+  }
+  .sectionContainer2 {
+    display: inline-block;
+    width: 26.5%;
+
+    padding-bottom: 90px;
+    height: 15rem;
+  }
+  .sectionContainer3 {
+    display: inline-block;
+    width: 26.5%;
+  }
+  .statisticsComponentParentContainer1 {
+    width: 93%;
+    margin: 0px auto;
+    background-color: #ffffff;
+    padding-top: 4rem;
+
+    height: 15rem;
+    z-index: 1;
+  }
+  .statisticsComponentParentContainer2 {
+    width: 93%;
+    margin: 0px auto;
+    background-color: #ffffff;
+
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    height: 15rem;
+    z-index: 1;
+  }
+  .statisticsComponentParentContainer3 {
+    width: 93%;
+    margin: -80px auto;
+    background-color: #ffffff;
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+
+    height: 15rem;
+    z-index: 1;
+  }
 }
