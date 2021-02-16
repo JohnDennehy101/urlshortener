@@ -1,2 +1,36 @@
 .boostLinksContainer {
+  background-color: rgb(59, 48, 84);
+  height: 20vh;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.boostLinksTitle {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.boostLinksButton {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 501px) {
+  .boostLinksButton {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    background-color: hsl(180, 66%, 49%);
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+  }
+  .boostLinksContainer {
+    height: 30vh;
+  }
 }
