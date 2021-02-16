@@ -7,6 +7,7 @@ import {useState, useEffect, useCallback} from 'react';
 import '../src/CSS/InputField.css'
 import Statistics from '../src/Components/Statistics'
 import BoostLinksComponent from '../src/Components/BoostLinksComponent'
+import Footer from '../src/Components/Footer'
 import axios from 'axios';
 
 function App() {
@@ -90,6 +91,7 @@ let styleSettings = window.innerWidth > 500 ? {
       <DisplayLinks originalLinks={shortenedUrls} />
       <Statistics />
       <BoostLinksComponent />
+      <Footer />
 
       
 
